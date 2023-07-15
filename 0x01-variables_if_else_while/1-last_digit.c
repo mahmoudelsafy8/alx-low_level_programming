@@ -3,29 +3,28 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: always 0
+ * Return: Always 0
  */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
-	int ld;
+	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	ld = n % 10;
-	if (ld > 5)
+	x = n % 10;
+	if (x > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, ld);
+		printf("Last digit of %d is %d and is greater than 5\n", n, x);
 	}
-	else if (ld == 0)
+	else if (x == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n" n, ld);
+		printf("Last digit of %d is %d and is 0\n", n, x);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, ld);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, x);
 	}
 	return (0);
 }
