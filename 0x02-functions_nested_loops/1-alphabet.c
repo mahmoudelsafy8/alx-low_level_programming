@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry piont
+ * print_alphabet  - alphabet in lowercase
  * Return: ON Success 0
  */
 void print_alphabet(void)
