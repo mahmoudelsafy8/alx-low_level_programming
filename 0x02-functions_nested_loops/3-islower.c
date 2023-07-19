@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _islower -output 1 if a - else 0
- * c: char in ASCII
+ * _islower - output 1 if a - else 0
+ * @c: char in ASCII
  * Return: On Seccess 1 else 0
  */
 int _islower(int c)
