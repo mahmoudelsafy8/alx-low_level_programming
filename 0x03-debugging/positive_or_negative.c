@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * positive_or_negative - Return positive or negative or zero.
+ * @i: input number
+ * Return: no return
+ */
 
 void positive_or_negative(int i)
 {
