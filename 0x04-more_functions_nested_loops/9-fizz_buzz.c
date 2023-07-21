@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
  * main - output 1 to 100
+ * Fizz for multiples of three.
+ * Buzz for the multiples of five
+ * FizzBuzz For numbers which are multiples of both three and five
  * Return: 0
  */
 int main(void)
