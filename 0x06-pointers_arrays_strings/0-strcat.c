@@ -5,22 +5,17 @@
  *  and then adds a terminating null byte.
  *  @dast: input value.
  *  @src: input value.
- *  Return: no return.
+ *  Return: pointer to the resulting string dest
  */
 char *_strcat(char *dest, char *src)
 {
 	int x;
 	int y;
-
+	/* dest array size*/
 	x = 0;
-	while (dest[x] != '\0')
-	{
+	while (dest[x])
 		x++;
-	}
-	y = 0;
-	while (src[y] != '\0')
-	{
-		dest[x] = src[y];
-		x++;
-		y++;
-	}
+	for (y = 0; src[y]; y++)
+		dest[x++] = src[y];
+	return (dest);
+}
