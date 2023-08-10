@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
+#include <stdlib.h>
 /**
  * string_nconcat - concatenates two strings.
  * @s1: input str
