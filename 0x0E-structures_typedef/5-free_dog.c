@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * free_dog - frees dogs.
  * @d: input
@@ -9,8 +8,10 @@ void free_dog(dog_t *d)
 {
 	if (d)
 	{
-		free(d->name);
-		free(d->age);
+		if (d->name)
+			free(d->name);
+		if (d->owner)
+			free(d->owner);
 		free(d);
 	}
 }
