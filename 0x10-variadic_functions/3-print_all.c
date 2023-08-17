@@ -47,8 +47,8 @@ void format_string(char *separator, va_list ap)
  */
 void print_all(const char * const format, ...)
 {
-	int x = 0;
-	int y;
+	int i = 0;
+	int j;
 	char *separator = "";
 	va_list ap;
 	token_t token[] = {
@@ -60,19 +60,19 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	while (format && format[x])
+	while (format && format[i])
 	{
-		y = 0;
-		while (tokens[y].token)
+		j = 0;
+		while (tokens[j].token)
 		{
-			if (format[x] == tokens[y].token[0])
+			if (format[i] == tokens[j].token[0])
 			{
-				tokens[y].f(separator, ap);
+				tokens[j].f(separator, ap);
 				separator = ", ";
 			}
-			y++;
+			j++;
 		}
-		x++;
+		i++;
 	}
 	printf("\n");
 	va_end(ap);
