@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stdio.h>
 /**
  * format_char - format for char
  * @separator: string to be printed between the strings
@@ -37,9 +38,9 @@ void format_string(char *separator, va_list ap)
 	char *str = va_arg(ap, char *);
 
 	switch ((int)(!str))
-	case 1:
-		str = "(nil)";
-		printf("%s%s", separator, str);
+		case 1;
+	str = "(nil)";
+	printf("%s%s", separator, str);
 }
 /**
  * print_all - prints anything.
