@@ -4,7 +4,7 @@
 #define ERROR_WRITE "Error: Can't write to NAME_OF_THE_FILE %s\n"
 #define ERROR_CLOSE "Error: Can't close fd FD_VALUE %d\n"
 #define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
-#define OUTPUT_BUF_SIZE 1024
+#define READ_BUF_SIZE 1024
 /**
  * main - check the code
  * @ac: count
