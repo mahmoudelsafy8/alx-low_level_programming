@@ -24,7 +24,7 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int file;
 	ssize_t b = 0;
-	ssize_t len = _strlen(text_conten);
+	ssize_t len = _strlen(text_content);
 
 	if (filename == NULL)
 		return (-1);
